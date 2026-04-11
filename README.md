@@ -16,7 +16,7 @@ Este projeto é um ecossistema de inteligência artificial desenvolvido em Pytho
 * `historico_memoria.json`: Memória local do agente.
 
 ## 📋 Diário de Troubleshooting (DevOps Mindset)
-Durante o desenvolvimento, superamos desafios críticos de ambiente:
+Durante o desenvolvimento, superei desafios críticos de ambiente:
 1. **Versionamento:** Ajuste do Python 3.14 para 3.13 para compatibilidade de drivers de áudio.
 2. **Hardware:** Implementação de limpeza de buffer de voz para evitar travamento de microfone no Windows/Linux.
 3. **Estado:** Gestão de memória persistente com `st.session_state`.
