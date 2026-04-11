@@ -1,8 +1,8 @@
-# 🎙️ Projeto Agente IA: Assistente de Voz com Memória Permanente
+# 🎙️  Projeto Agente IA: Assistente de Voz com Memória Permanente
 
 Este projeto é um ecossistema de inteligência artificial desenvolvido em Python, integrando o **Google Gemini (LLM)** com interfaces de voz e web. O sistema possui memória persistente via JSON, permitindo continuidade nas interações.
 
-## 🛠️ Stack Tecnológica & Arquitetura
+## 🛠️  Stack Tecnológica & Arquitetura
 * **LLM (Large Language Model):** Google Gemini 1.5 Flash.
 * **Frontend Web:** Streamlit.
 * **Speech-to-Text:** SpeechRecognition (Google API).
@@ -25,3 +25,4 @@ Durante o desenvolvimento, superamos desafios críticos de ambiente:
 1. Instale as dependências: `pip install streamlit google-generativeai speechrecognition pyttsx3 pyaudio`
 2. Execute a versão Web: `streamlit run app.py`# Agente_IA
 Agente de IA multimodal utilizando LLM Gemini, com interface Web e assistente de voz com memória permanente.
+
