@@ -32,5 +32,5 @@ Durante o desenvolvimento, superei desafios criticos:
 ## ⚙️ Como Executar
 
 1. **Dependencias:** `pip install streamlit google-generativeai gTTS`
-2. **Chave:** Insira sua API Key na variavel `minha_chave` no codigo.
-3. **Executar:** `streamlit run app-final.py`
+2. **Chave:** Obtenha sua API Key no [Google AI Studio](https://aistudio.google.com/app/apikey) e insira na variável `minha_chave` no código.
+3. **Executar:** `streamlit run app-final.py``
