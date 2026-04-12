@@ -1,6 +1,6 @@
 # Projeto Agente IA: Assistente Web Multimodal
 
-Este projeto e um ecossistema de inteligencia artificial desenvolvido em Python, integrando o **Google Gemini (LLM)** com uma interface web interativa. O sistema foi otimizado para oferecer uma experiencia fluida de chat com sintese de voz automatica no navegador.
+Este projeto é um ecossistema de inteligencia artificial desenvolvido em Python, integrando o **Google Gemini (LLM)** com uma interface web interativa. O sistema foi otimizado para oferecer uma experiencia fluida de chat com sintese de voz automatica no navegador.
 
 ## 🛠️ Stack Tecnologica & Arquitetura
 
