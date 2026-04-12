@@ -1,28 +1,36 @@
-# 🎙️  Projeto Agente IA: Assistente de Voz com Memória Permanente
+# Projeto Agente IA: Assistente Web Multimodal
 
-Este projeto é um ecossistema de inteligência artificial desenvolvido em Python, integrando o **Google Gemini (LLM)** com interfaces de voz e web. O sistema possui memória persistente via JSON, permitindo continuidade nas interações.
+Este projeto e um ecossistema de inteligencia artificial desenvolvido em Python, integrando o **Google Gemini (LLM)** com uma interface web interativa. O sistema foi otimizado para oferecer uma experiencia fluida de chat com sintese de voz automatica no navegador.
 
-## 🛠️  Stack Tecnológica & Arquitetura
+## 🛠️ Stack Tecnologica & Arquitetura
+
 * **LLM (Large Language Model):** Google Gemini 1.5 Flash.
 * **Frontend Web:** Streamlit.
-* **Speech-to-Text:** SpeechRecognition (Google API).
-* **Text-to-Speech:** PyTTsx3.
-* **Persistência:** Banco de dados documental em JSON.
-* **Ambiente DevOps:** Rocky Linux (VM via SSH), VS Code, Git.
+* **Text-to-Speech (Voz):** gTTS (Google Text-to-Speech).
+* **Estado/Memoria:** Gestao de contexto via `st.session_state`.
+* **Ambiente DevOps:** Rocky Linux, VS Code, Git.
 
 ## 📂 Estrutura
-* `app.py`: Interface Web moderna com balões de chat.
-* `assistente.py`: Versão leve para execução via Terminal.
-* `historico_memoria.json`: Memória local do agente.
 
-## 📋 Diário de Troubleshooting (DevOps Mindset)
-Durante o desenvolvimento, superei desafios críticos de ambiente:
-1. **Versionamento:** Ajuste do Python 3.14 para 3.13 para compatibilidade de drivers de áudio.
-2. **Hardware:** Implementação de limpeza de buffer de voz para evitar travamento de microfone no Windows/Linux.
-3. **Estado:** Gestão de memória persistente com `st.session_state`.
+* `app.py`: Interface Web moderna com baloes de chat e saida de audio.
+* `historico`: Memoria de sessao ativa durante a execucao.
+
+## 🎙️ Memoria e Audio
+
+* **Possui Voz?** Sim. As respostas sao convertidas em audio automaticamente.
+* **Armazena Memoria?** Sim. Mantem o contexto enquanto a aba estiver aberta.
+* **Persistencia Local:** Nao. Versao focada em performance web.
+
+## 📋 Diario de Troubleshooting (DevOps Mindset)
+
+Durante o desenvolvimento, superei desafios criticos:
+1. **API Management:** Logica dinamica para listagem de modelos (Erro 404).
+2. **Web Audio:** Injeção HTML5 para autoplay de audio no navegador.
+3. **Cota de Requisicoes:** Tratamento de excessoes para Erro 429.
+4. **Ambiente:** Correcao de dependencias via terminal (gTTS).
 
 ## ⚙️ Como Executar
-1. Instale as dependências: `pip install streamlit google-generativeai speechrecognition pyttsx3 pyaudio`
-2. Execute a versão Web: `streamlit run app.py`# Agente_IA
-Agente de IA multimodal utilizando LLM Gemini, com interface Web e assistente de voz com memória permanente.
 
+1. **Dependencias:** `pip install streamlit google-generativeai gTTS`
+2. **Chave:** Insira sua API Key na variavel `minha_chave` no codigo.
+3. **Executar:** `streamlit run app.py`
