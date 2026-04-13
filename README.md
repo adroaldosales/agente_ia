@@ -1,6 +1,6 @@
 # Projeto Agente IA: Assistente com chat e saída de voz
 
-Este projeto tem como objetivo utilizar a IA Gemini para para interação, há um campo onde você realiza a interação e a IA responde em texto e com áudio, foi desenolvido usando a linguagem  Python, integrando o **Google Gemini (LLM)** com uma interface web bem simples e funcional no navegador.
+Este projeto tem como objetivo utilizar a IA Gemini para interação, há um campo onde você realiza a interação e a IA responde em texto e com áudio, foi desenolvido usando a linguagem em Python, integrando o **Google Gemini (LLM)** com uma interface web bem simples e funcional no navegador.
 
 ## Tecnologias utilizadas:
 
@@ -15,10 +15,10 @@ Este projeto tem como objetivo utilizar a IA Gemini para para interação, há u
 * `app.py`: Interface Web simples e funcional com chat e saida de audio.
 * `historico`: Memoria de sessao ativa durante a execucao.
 
-## Memoria e Audio
+## Memória e Audio
 
 * **Possui Voz?** Sim. As respostas sao convertidas em audio automaticamente.
-* **Armazena Memoria?** Sim. Mantem o historico da convesa enquanto a aba estiver aberta.
+* **Armazena Memoria?** Sim. Mantem o historico da conversa enquanto a aba estiver aberta.
 * **Persistencia Local:** Nao. Versao focada em performance web.
 
 ##  Desafios encontrados, o tão famoso "Troubleshooting"
@@ -26,8 +26,8 @@ Este projeto tem como objetivo utilizar a IA Gemini para para interação, há u
 Durante o desenvolvimento, superei desafios criticos:
 1. **API Management:** Enfrentei problemas com (Erro 404).
 2. **Web Audio:** Injeção HTML5 para autoplay de audio no navegador.
-3. **Cota de Requisicoes:** Como estou usando uma versão gratuita, a IA impõe limitações de uso com o  Erro 429.
-4. **Ambiente:** Tive dificuldade com o audio, recorri a algumas dependencias do gTTS até conseguir que funcionasse a correcão.
+3. **Cota de Requisicções:** Como estou usando uma versão gratuita, a IA impõe limitações de uso com o  Erro 429.
+4. **Ambiente:** Tive dificuldade com o audio, recorri a algumas dependencias do gTTS até conseguir que funcionasse a correção.
 
 ## Para executar
 
