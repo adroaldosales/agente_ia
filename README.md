@@ -1,4 +1,4 @@
-# Projeto Agente IA: Assistente com chat e saída de voz
+# Projeto Agente IA: Assistente com chat e de voz
 
 Este projeto tem como objetivo utilizar a IA Gemini para interação, há um campo onde você realiza a interação e a IA responde em texto e com áudio, foi desenolvido usando a linguagem em Python, integrando o **Google Gemini (LLM)** com uma interface web bem simples e funcional no navegador.
 
